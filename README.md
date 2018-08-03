@@ -27,6 +27,15 @@ All phases are evaluated with the following metrics with priority descend:
 
 All metrics implemented in [metrics.py](metrics.py) script
 
+# Baseline
+
+[Baseline 1](baseline_1-2.ipynb) for phases 1 (Public) and 2 (Private)
+
+[Baseline 1](baseline_3-4.ipynb) for phases 3 (Public) and 4 (Private)
+
+??? for phases 5 (Public) and 6 (Private)
+
+
 # Environment setup
 
 ```
