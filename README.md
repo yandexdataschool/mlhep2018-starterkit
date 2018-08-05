@@ -41,6 +41,8 @@ All metrics implemented in [metrics.py](metrics.py) script
 
 ??? for phases 5 (Public) and 6 (Private)
 
+[Baseline 3](second_baseline_1-2.ipynb) for phases 1 (Public) and 2 (Private)
+
 
 # Environment setup
 
