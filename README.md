@@ -29,19 +29,16 @@ All metrics implemented in [metrics.py](metrics.py) script
 
 # Baseline
 
-[Baseline 1](baseline_1-2.ipynb) for phases 1 (Public) and 2 (Private)
+## Phases 1-2
+Baselines for phases 1 (Public) and 2 (Private) are placed in [phase_1-2](phase_1-2/) directory:
 
-[Baseline 1](baseline_3-4.ipynb) for phases 3 (Public) and 4 (Private)
+* [Baseline MPNN](phase_1-2/baseline_mpnn/baseline_mpnn.ipynb)
+* [Baseline CNN](phase_1-2/baseline_cnn/baseline_cnn.ipynb)
 
-??? for phases 5 (Public) and 6 (Private)
+## Phases 3-4
+Baselines for phases 3 (Public) and 4 (Private) are placed in [phase_3-4](phase_3-4/) directory:
 
-[Baseline 2](simplified_baseline_1-2.ipynb) for phases 1 (Public) and 2 (Private)
-
-[Baseline 2](simplified_baseline_3-4.ipynb) for phases 3 (Public) and 4 (Private)
-
-??? for phases 5 (Public) and 6 (Private)
-
-[Baseline 3](second_baseline_1-2.ipynb) for phases 1 (Public) and 2 (Private)
+* [Baseline MPNN](phase_3-4/baseline_mpnn/baseline_mpnn.ipynb)
 
 
 # Environment setup
