@@ -3,7 +3,7 @@ Starter kit for MLHEP-18 challenge
 
 # About
 
-Repository contains starter kit for [???](https://competitions.codalab.org/competitions/19731) competition
+Repository contains starter kit for [Semantic Segmentation of LArTPC tracks](https://competitions.codalab.org/competitions/19818) competition
 
 
 # Phases
