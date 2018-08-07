@@ -1,4 +1,4 @@
-tensorflow==1.9.0
+tensorflow-gpu==1.9.0
 numpy==1.14.3
 Keras==2.2.0
 Keras-Applications==1.0.2
