@@ -1,5 +1,4 @@
 import tables
-import tables
 from sklearn.metrics import roc_auc_score
 import numpy as np
 from collections import OrderedDict
