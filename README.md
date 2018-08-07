@@ -27,6 +27,10 @@ All phases are evaluated with the following metrics with priority descend:
 
 All metrics implemented in [metrics.py](metrics.py) script
 
+# Evaluation
+
+Use [evaluation.py](evaluation.py) script
+
 # Baseline
 
 ## Phases 1-2
