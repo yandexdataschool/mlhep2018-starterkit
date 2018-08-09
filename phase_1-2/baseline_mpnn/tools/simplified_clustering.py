@@ -26,11 +26,13 @@ def generate_edges(X, mode='kneighbors_graph', n_neighbors=3, radius=0.1):
     return nodes_features, np.c_[edges_features, weights], edges.astype(int)
 
 
-def generate_graph_dataset(X, Y, M, n_neighbors, in_degree_max=None, out_degree_max=None, mode='kneighbors_graph'):
+def generate_graph_dataset(X, Y, M, n_neighbors, radius=0.1, in_degree_max=None, out_degree_max=None, mode='kneighbors_graph'):
     X_graph_dataset = {}
     
+    
+    
     N = len(X)
-    nodes_features, edges_features, edges_in_out = generate_edges(X, n_neighbors=n_neighbors, mode=mode)
+    nodes_features, edges_features, edges_in_out = generate_edges(X, n_neighbors=n_neighbors, mode=mode, radius=radius)
     X_graph_dataset['X_cluster_nodes'] = nodes_features
     X_graph_dataset['X_cluster_edges'] = edges_features
     X_graph_dataset['X_cluster_in_out'] = edges_in_out.T
