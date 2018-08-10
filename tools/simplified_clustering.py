@@ -8,6 +8,8 @@ def generate_edges(X, mode='kneighbors_graph', n_neighbors=3, radius=0.1):
     returns array with pairs of indices [vertex_from, vertex_to] and weight vector
     """
     n_neighbors = min(n_neighbors, len(X) - 1)
+    if n_neighbors == 0:
+        return X[:, 3].reshape(-1, 1), np.zeros((1, 5)), np.zeros((2, 1))
     if mode == 'kneighbors_graph':
         adjacency_matrix = np.array((kneighbors_graph(X=X[:, :3], 
                                                       n_neighbors=n_neighbors, mode='distance')).todense())

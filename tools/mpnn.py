@@ -48,15 +48,14 @@ def run_train(X_cluster_graph, X_predictions, optimizer, sess,
 
 
 def run_test(X_cluster_graph, X_predictions, sess,
-             ndim_features_nodes, ndim_features_edges, placeholders, metrics=[]):
-    predictions, *metrics = sess.run([X_predictions] + metrics, feed_dict={
+             ndim_features_nodes, ndim_features_edges, placeholders):
+    predictions = sess.run(X_predictions, feed_dict={
         placeholders['X_nodes']: stretch_array(X_cluster_graph['X_cluster_nodes'], ndim_features_nodes),
         placeholders['X_edges']: stretch_array(X_cluster_graph['X_cluster_edges'], ndim_features_edges),
-        placeholders['X_labels']: X_cluster_graph['Y_cluster_labels'],
         placeholders['X_nodes_in_out']: X_cluster_graph['X_cluster_in_out'],
         placeholders['X_messages_in']: X_cluster_graph['X_cluster_messages_in'],
         placeholders['X_messages_out']: X_cluster_graph['X_cluster_messages_out'],
         K.learning_phase(): 0
     })
 
-    return predictions, metrics
+    return predictions
